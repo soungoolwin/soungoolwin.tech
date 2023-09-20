@@ -2,13 +2,15 @@
 const { blogs } = defineProps({ blogs: Array }); //props pass from Home.vue that is home page that have two parts(Blogs and Projects)
 </script>
 <template>
-    <Index :blogs="blogs" />
+    <Blogs :blogs="blogs" />
+    <Index></Index>
 </template>
 
 <script>
-import Index from "./Blogs/Index.vue";
+import Blogs from "./Blogs/Index.vue";
+
 export default {
-    components: { Index },
+    components: { Blogs },
 };
 </script>
 

@@ -15,4 +15,10 @@ class BlogController extends Controller
             'blogs' => $blogs
         ]);
     }
+    public function show(Blog $blog)
+    {
+        return Inertia::render('Blogs/Show', [
+            'blog' => $blog
+        ]);
+    }
 }

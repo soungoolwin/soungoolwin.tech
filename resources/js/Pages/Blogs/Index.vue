@@ -30,7 +30,7 @@ const truncatedContent = (content) => {
                 <div class="card" v-for="blog in blogs" :key="blog.id">
                     <div class="row">
                         <div class="col-md-5 wrapthumbnail">
-                            <a href="post.html">
+                            <a :href="'blogs/' + blog.slug">
                                 <div
                                     class="thumbnail"
                                     :style="
