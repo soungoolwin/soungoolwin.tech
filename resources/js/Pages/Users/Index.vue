@@ -1,6 +1,5 @@
 <template>
     <h1>Hello{{ name }}</h1>
-    <a :href="route('ziggy')">Ziggy</a>
 </template>
 
 <script>

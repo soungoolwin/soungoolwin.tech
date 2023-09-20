@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -14,13 +15,4 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Users/Index', [
-        'name' => 'Vito',
-    ]);
-});
-Route::get(
-    '/ziggytest',
-    fn () =>
-    "Ziggy Works"
-)->name('ziggy');
+Route::get('/', [BlogController::class, 'index']);
