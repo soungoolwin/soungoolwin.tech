@@ -1,5 +1,5 @@
 <script setup>
-const { blogs } = defineProps({ blogs: Array });
+const { blogs } = defineProps({ blogs: Object });
 
 // Function to truncate content for preview
 const truncatedContent = (content) => {
@@ -27,7 +27,7 @@ const truncatedContent = (content) => {
             </div>
             <div class="card-columns listfeaturedtag">
                 <!-- begin post -->
-                <div class="card" v-for="blog in blogs" :key="blog.id">
+                <div class="card" v-for="blog in blogs.data" :key="blog.id">
                     <div class="row">
                         <div class="col-md-5 wrapthumbnail">
                             <a :href="'blogs/' + blog.slug">
@@ -95,13 +95,17 @@ const truncatedContent = (content) => {
                 </div>
                 <!-- end post -->
             </div>
+            <Pagination :pagination="blogs.meta" />
         </section>
         <!-- End Blogs -->
     </div>
 </template>
 
 <script>
-export default {};
+import Pagination from "../../components/Pagination.vue";
+export default {
+    components: { Pagination },
+};
 </script>
 
 <style></style>

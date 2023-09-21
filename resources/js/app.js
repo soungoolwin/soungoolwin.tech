@@ -14,9 +14,17 @@ createInertiaApp({
     },
 
     setup({ el, App, props, plugin }) {
-        return createApp({ render: () => h(App, props) })
-            .mixin({ methods: { route } })
-            .use(plugin)
-            .mount(el);
+        // Create the Vue app instance
+        const app = createApp({ render: () => h(App, props) });
+
+        // Register a global Vue directive to render raw HTML
+        app.directive("raw-html", {
+            mounted(el, binding) {
+                el.innerHTML = binding.value;
+            },
+        });
+
+        // Mixin and mount the app
+        app.mixin({ methods: { route } }).use(plugin).mount(el);
     },
 });
