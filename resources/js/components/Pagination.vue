@@ -1,12 +1,4 @@
 <template>
-    <!-- <nav>
-        <template v-for="link in pagination.links" :key="link.label">
-            <Link :href="link.url ?? ''" v-raw-html="link.label">
-                {{ link.label }}</Link
-            >
-        </template>
-    </nav> -->
-
     <nav>
         <ul class="pagination justify-content-center">
             <template v-for="link in pagination.links" :key="link.label">
