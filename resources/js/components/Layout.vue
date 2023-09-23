@@ -17,8 +17,8 @@
             </button>
             <div class="container">
                 <!-- Begin Logo -->
-                <a class="navbar-brand" href="index.html">
-                    <img src="../../img/logo.png" alt="logo" />
+                <a class="navbar-brand" href="/">
+                    <i class="fa-solid fa-s"></i>
                 </a>
                 <!-- End Logo -->
                 <div
@@ -27,17 +27,33 @@
                 >
                     <!-- Begin Menu -->
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html"
-                                >Stories
-                                <span class="sr-only">(current)</span></a
+                        <li class="nav-item">
+                            <Link
+                                class="nav-link"
+                                :class="{
+                                    active: $page.url === '/',
+                                }"
+                                href="/"
+                                >Blog</Link
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="post.html">Post</a>
+                            <Link
+                                class="nav-link"
+                                :class="{ active: $page.url === '/CV' }"
+                                href="/CV"
+                                >CV</Link
+                            >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="author.html">Author</a>
+                            <Link
+                                class="nav-link"
+                                :class="{
+                                    active: $page.url.startsWith('/author'),
+                                }"
+                                href="/author"
+                                >Author</Link
+                            >
                         </li>
                     </ul>
                     <!-- End Menu -->
@@ -89,6 +105,12 @@
     </div>
 </template>
 
-<script>
-export default {};
+<script setup>
+import { Link } from "@inertiajs/vue3";
 </script>
+
+<style>
+.active {
+    text-decoration: underline;
+}
+</style>
