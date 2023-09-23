@@ -26,6 +26,7 @@ class ProjectResource extends Resource
                 Forms\Components\TextInput::make('name')->required(),
                 Forms\Components\MarkdownEditor::make('description')->required(),
                 Forms\Components\TextInput::make('project_url')->required(),
+                Forms\Components\TextInput::make('logo_url')->required(),
             ]);
     }
 
@@ -33,9 +34,9 @@ class ProjectResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name'),
-                Tables\Columns\TextColumn::make('description')->searchable()->sortable(),
-                Tables\Columns\TextColumn::make('project_url')->searchable(),
+                Tables\Columns\TextColumn::make('name')->searchable()->sortable(),
+                Tables\Columns\TextColumn::make('description')->searchable(),
+                Tables\Columns\TextColumn::make('project_url'),
             ])
             ->filters([
                 //
