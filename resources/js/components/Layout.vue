@@ -31,7 +31,7 @@
                             <Link
                                 class="nav-link"
                                 :class="{
-                                    active: $page.url === '/',
+                                    active: $page.url.startsWith('/?'),
                                 }"
                                 href="/"
                                 >Blog</Link
@@ -40,9 +40,9 @@
                         <li class="nav-item">
                             <Link
                                 class="nav-link"
-                                :class="{ active: $page.url === '/CV' }"
-                                href="/CV"
-                                >CV</Link
+                                :class="{ active: $page.url === '/project' }"
+                                href="/project"
+                                >Project</Link
                             >
                         </li>
                         <li class="nav-item">

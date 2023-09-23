@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -22,3 +23,6 @@ Route::get('/blogs/{blog:slug}', [BlogController::class, 'show']);
 
 //Author
 Route::get('/author', [AuthorController::class, 'index']);
+
+//Projects
+Route::get('/project', [ProjectController::class, 'index']);
