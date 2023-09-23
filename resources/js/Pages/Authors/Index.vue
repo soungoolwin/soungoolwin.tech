@@ -3,11 +3,30 @@
         <!-- Left Column (About Me) -->
         <div class="col-md-6">
             <h1>Hello, I'm Soung Oo Lwin</h1>
+            <p class="mt-5">
+                Originally from Yangon, Burma. But, I live in Bangkok now. I've
+                been a tech enthusiast since I was a kid, always curious about
+                tech gadgets, computers, and hardware. When I started
+                university, I wasn't exactly sure what programming was, but my
+                passion for all things tech led me to choose a Computer Science
+                Major.
+            </p>
+            <br />
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                euismod arcu ac nunc fringilla, id sodales purus suscipit.
-                Vivamus rhoncus, nisl nec cursus facilisis, odio nunc bibendum
-                turpis, in malesuada libero odio eu turpis.
+                During my first year, I didn't really get into programming, but
+                then COVID-19 hit, and I found myself in lockdown. That's when I
+                decided to dive into web development through self-study. In
+                January 2023, I took the next step in my journey by enrolling in
+                the ICT major at Rangsit University, Thailand. Alongside my
+                university courses, I kept learning web development and gained
+                hands-on experience through internships and personal projects.
+            </p>
+            <br />
+            <p>
+                Today, I'm busy learning and applying software project
+                management and other soft skills to prepare for future jobs. I'm
+                a passionate developer, and I'm excited to keep learning and
+                coming up with new tech innovations in the future."
             </p>
         </div>
         <!-- Right Column (Photo and Social Media Links) -->
@@ -57,8 +76,8 @@
                     href="mailto:soungoolwin275@gmail.com"
                     target="_blank"
                     class="link-dark"
-                    ><i class="fa-solid fa-envelope mr-2"></i>Follow me on
-                    Instagram</a
+                    ><i class="fa-solid fa-envelope mr-2"></i
+                    >soungoolwin275@gmail.com</a
                 >
             </p>
         </div>
