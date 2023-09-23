@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -15,5 +16,9 @@ use Inertia\Inertia;
 |
 */
 
+//Blogs
 Route::get('/', [BlogController::class, 'index']);
 Route::get('/blogs/{blog:slug}', [BlogController::class, 'show']);
+
+//Author
+Route::get('/author', [AuthorController::class, 'index']);

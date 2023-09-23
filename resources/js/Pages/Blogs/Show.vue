@@ -65,7 +65,7 @@ const { blog } = defineProps({ blog: Object }); //props pass from Home.vue that 
                             ><img
                                 class="author-thumb"
                                 src="../../../img/IMG_1821.jpg"
-                                alt="Sal"
+                                alt="Soung Oo Lwin"
                         /></a>
                     </div>
                     <div class="col-md-10">
@@ -79,7 +79,7 @@ const { blog } = defineProps({ blog: Object }); //props pass from Home.vue that 
                             Student at Rangist University(ICT) and passionate
                             Web Developer.
                         </p>
-                        <span class="post-date">22 July 2017</span
+                        <span class="post-date">{{ blog.created_at }}</span
                         ><span class="dot"></span
                         ><span class="post-read">6 min read</span>
                     </div>
@@ -94,7 +94,7 @@ const { blog } = defineProps({ blog: Object }); //props pass from Home.vue that 
             <!-- Begin Featured Image -->
             <img
                 class="featured-image img-fluid"
-                src="assets/img/demopic/10.jpg"
+                :src="blog.thumbnail_url"
                 alt=""
             />
             <!-- End Featured Image -->
