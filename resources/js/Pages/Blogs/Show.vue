@@ -1,7 +1,11 @@
 <script setup>
 import formatRelativeTime from "../../composables/formatRelativeTime";
 import calculateReadingTime from "../../../js/composables/calculateReadingTime";
+import { marked } from "marked";
+
 const { blog } = defineProps({ blog: Object }); //props pass from Home.vue that is home page that have two parts(Blogs and Projects)
+
+let renderMarkdown = marked(blog.content);
 </script>
 <template>
     <!-- show single blog -->
@@ -107,7 +111,7 @@ const { blog } = defineProps({ blog: Object }); //props pass from Home.vue that 
 
             <!-- Begin Post Content -->
             <div class="article-post">
-                {{ blog.content }}
+                <div v-html="renderMarkdown"></div>
             </div>
             <!-- End Post Content -->
         </div>
@@ -116,8 +120,6 @@ const { blog } = defineProps({ blog: Object }); //props pass from Home.vue that 
     <!-- show single blog -->
 </template>
 
-<script>
-export default {};
-</script>
+<script></script>
 
 <style></style>

@@ -46,7 +46,9 @@ const truncatedContent = (content) => {
                         <div class="col-md-7">
                             <div class="card-block">
                                 <h2 class="card-title">
-                                    <a href="post.html">{{ blog.title }}</a>
+                                    <a :href="'blogs/' + blog.slug">{{
+                                        blog.title
+                                    }}</a>
                                 </h2>
                                 <h4 class="card-text">
                                     {{ truncatedContent(blog.content) }}
@@ -54,7 +56,8 @@ const truncatedContent = (content) => {
                                 <div class="metafooter">
                                     <div class="wrapfooter">
                                         <span class="meta-footer-thumb">
-                                            <a href="author.html"
+                                            <a
+                                                href="https://www.linkedin.com/in/soung-oo-lwin/"
                                                 ><img
                                                     class="author-thumb"
                                                     src="../../../img/IMG_1821.jpg"
