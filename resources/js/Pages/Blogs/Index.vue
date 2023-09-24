@@ -1,5 +1,6 @@
 <script setup>
 import formatRelativeTime from "../../../js/composables/formatRelativeTime";
+import calculateReadingTime from "../../../js/composables/calculateReadingTime";
 const { blogs } = defineProps({ blogs: Object });
 
 // Function to truncate content for preview
@@ -72,9 +73,11 @@ const truncatedContent = (content) => {
                                                 )
                                             }}</span
                                             ><span class="dot"></span
-                                            ><span class="post-read"
-                                                >6 min read</span
-                                            >
+                                            ><span class="post-read">{{
+                                                calculateReadingTime(
+                                                    blog.content
+                                                )
+                                            }}</span>
                                         </span>
                                         <!-- <span class="post-read-more"
                                             ><a

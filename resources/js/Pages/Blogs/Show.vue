@@ -1,5 +1,6 @@
 <script setup>
 import formatRelativeTime from "../../composables/formatRelativeTime";
+import calculateReadingTime from "../../../js/composables/calculateReadingTime";
 const { blog } = defineProps({ blog: Object }); //props pass from Home.vue that is home page that have two parts(Blogs and Projects)
 </script>
 <template>
@@ -84,7 +85,9 @@ const { blog } = defineProps({ blog: Object }); //props pass from Home.vue that 
                             formatRelativeTime(blog.created_at)
                         }}</span
                         ><span class="dot"></span
-                        ><span class="post-read">6 min read</span>
+                        ><span class="post-read">{{
+                            calculateReadingTime(blog.content)
+                        }}</span>
                     </div>
                 </div>
                 <!-- End Top Menta -->
