@@ -58,7 +58,7 @@
                     </ul>
                     <!-- End Menu -->
                     <!-- Begin Search -->
-                    <form class="form-inline my-2 my-lg-0">
+                    <!-- <form class="form-inline my-2 my-lg-0">
                         <input
                             class="form-control mr-sm-2"
                             type="text"
@@ -76,7 +76,7 @@
                                 ></path>
                             </svg>
                         </span>
-                    </form>
+                    </form> -->
                     <!-- End Search -->
                 </div>
             </div>
@@ -92,12 +92,8 @@
         <!-- Footer -->
         <footer class="container">
             <div class="footer">
-                <p class="pull-left">Copyright &copy; 2023 Soung Oo Lwin</p>
-                <p class="pull-right">
-                    Mediumish Theme by
-                    <a target="_blank" href="https://www.wowthemes.net"
-                        >WowThemes.net</a
-                    >
+                <p class="text-center mt-3">
+                    Copyright &copy; 2023 Soung Oo Lwin
                 </p>
                 <div class="clearfix"></div>
             </div>

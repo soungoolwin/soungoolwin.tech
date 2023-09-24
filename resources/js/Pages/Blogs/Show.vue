@@ -1,4 +1,5 @@
 <script setup>
+import formatRelativeTime from "../../composables/formatRelativeTime";
 const { blog } = defineProps({ blog: Object }); //props pass from Home.vue that is home page that have two parts(Blogs and Projects)
 </script>
 <template>
@@ -13,7 +14,7 @@ const { blog } = defineProps({ blog: Object }); //props pass from Home.vue that 
                         <a
                             target="_blank"
                             :href="
-                                'https://twitter.com/home?status=http%3A//www.soungoolwin.tech/blogs/' +
+                                'https://twitter.com/home?status=http%3A//www.soungoolwin.com/blogs/' +
                                 blog.slug
                             "
                         >
@@ -33,7 +34,7 @@ const { blog } = defineProps({ blog: Object }); //props pass from Home.vue that 
                         <a
                             target="_blank"
                             :href="
-                                'https://www.facebook.com/sharer/sharer.php?u=http%3A//www.soungoolwin.tech' +
+                                'https://www.facebook.com/sharer/sharer.php?u=http%3A//www.soungoolwin.com' +
                                 blog.slug
                             "
                         >
@@ -79,7 +80,9 @@ const { blog } = defineProps({ blog: Object }); //props pass from Home.vue that 
                             Student at Rangist University(ICT) and passionate
                             Web Developer.
                         </p>
-                        <span class="post-date">{{ blog.created_at }}</span
+                        <span class="post-date">{{
+                            formatRelativeTime(blog.created_at)
+                        }}</span
                         ><span class="dot"></span
                         ><span class="post-read">6 min read</span>
                     </div>
