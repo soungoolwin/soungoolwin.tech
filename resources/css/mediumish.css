@@ -329,6 +329,7 @@ blockquote {
 }
 .card {
     border-radius: 4px;
+    margin: auto;
 }
 .card .img-thumb {
     border-top-right-radius: 4px;

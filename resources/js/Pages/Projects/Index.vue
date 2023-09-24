@@ -14,13 +14,17 @@
 
     <div class="container mt-5">
         <div class="row">
-            <div class="col-md-4" v-for="project in projects" :key="project.id">
+            <div
+                class="col-lg-5 col-md-12 mx-auto"
+                v-for="project in projects"
+                :key="project.id"
+            >
                 <a :href="project.project_url" class="link">
                     <div class="project-card">
                         <div class="d-flex align-items-center">
                             <img
                                 :src="project.logo_url"
-                                alt="Project 1 Logo"
+                                alt="Project Logo"
                                 class="project-logo"
                             />
                             <h3>{{ project.name }}</h3>
@@ -64,7 +68,7 @@ defineProps({ projects: Object });
 }
 .project-logo {
     max-width: 50px;
-
+    height: 50px;
     margin-right: 10px;
     vertical-align: middle;
     border-radius: 50%;

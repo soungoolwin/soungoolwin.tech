@@ -30,7 +30,7 @@ const truncatedContent = (content) => {
             <div class="row listfeaturedtag">
                 <!-- begin post -->
                 <div
-                    class="card col-lg-6 col-md-12"
+                    class="card col-lg-5 col-md-12"
                     v-for="blog in blogs.data"
                     :key="blog.id"
                 >

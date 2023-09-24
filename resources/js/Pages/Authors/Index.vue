@@ -60,7 +60,7 @@
                         Medium</a
                     >
                 </p>
-                <p>
+                <!-- <p>
                     <a
                         href="https://www.facebook.com/soung.lwin.75"
                         target="_blank"
@@ -68,7 +68,7 @@
                         ><i class="fa-brands fa-facebook mr-2"></i>Follow me on
                         Facebook</a
                     >
-                </p>
+                </p> -->
             </div>
             <div class="sep"></div>
             <p class="text-center">
