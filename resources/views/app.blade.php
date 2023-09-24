@@ -4,6 +4,29 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="description"
+        content="Soung Oo Lwin shares in-depth programming blogs and completed coding projects. Learn, code, and get inspired with our tech-focused content">
+    <meta name="keywords"
+        content="programming blogs, coding tutorials, web development projects, software development tips, tech articles">
+    <meta name="author" content="Soung Oo Lwin">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="/soungoolwin.favicon.jpg" type="image/x-icon">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Programming Blogs and Coding Tutorials | Your Website Name">
+    <meta property="og:description"
+        content="Explore programming blogs and completed coding projects. Learn, code, and get inspired with tech-focused content.">
+    <meta property="og:url" content="https://soungoolwin.me">
+    <meta property="og:image" content="https://tinyurl.com/4d3zuukd">
+
+
+
+    <meta property="og:image:alt" content="soungoolwin">
+    <meta property="og:site_name" content="Soung Oo Lwin">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:author" content="https://web.facebook.com/soung.lwin.75">
+
+
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script> {{-- Alpine.js setup --}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> {{-- jQuery setup --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"

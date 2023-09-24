@@ -39,7 +39,7 @@ let renderMarkdown = marked(blog.content);
                         <a
                             target="_blank"
                             :href="
-                                'https://www.facebook.com/sharer/sharer.php?u=http%3A//www.soungoolwin.me' +
+                                'https://www.facebook.com/sharer/sharer.php?u=http%3A//www.soungoolwin.me/blogs/' +
                                 blog.slug
                             "
                         >
