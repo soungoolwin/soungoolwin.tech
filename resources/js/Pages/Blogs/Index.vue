@@ -6,7 +6,7 @@ const { blogs } = defineProps({ blogs: Object });
 // Function to truncate content for preview
 const truncatedContent = (content) => {
     const words = content.split(" ");
-    const truncatedWords = words.slice(0, 17);
+    const truncatedWords = words.slice(0, 5);
     return truncatedWords.join(" ");
 };
 </script>

@@ -15,7 +15,7 @@ const { blog } = defineProps({ blog: Object }); //props pass from Home.vue that 
                         <a
                             target="_blank"
                             :href="
-                                'https://twitter.com/home?status=http%3A//www.soungoolwin.com/blogs/' +
+                                'https://twitter.com/home?status=http%3A//www.soungoolwin.me/blogs/' +
                                 blog.slug
                             "
                         >
@@ -35,7 +35,7 @@ const { blog } = defineProps({ blog: Object }); //props pass from Home.vue that 
                         <a
                             target="_blank"
                             :href="
-                                'https://www.facebook.com/sharer/sharer.php?u=http%3A//www.soungoolwin.com' +
+                                'https://www.facebook.com/sharer/sharer.php?u=http%3A//www.soungoolwin.me' +
                                 blog.slug
                             "
                         >
