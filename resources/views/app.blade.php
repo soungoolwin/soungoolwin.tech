@@ -15,7 +15,7 @@
     <link rel="icon" href="/soungoolwin.favicon.jpg" type="image/x-icon">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Programming Blogs and Coding Tutorials | Your Website Name">
+    <meta property="og:title" content="Programming Blogs and Projects | Soung Oo Lwin">
     <meta property="og:description"
         content="Explore programming blogs and completed coding projects. Learn, code, and get inspired with tech-focused content.">
     <meta property="og:url" content="https://soungoolwin.me">

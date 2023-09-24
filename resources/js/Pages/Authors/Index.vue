@@ -4,12 +4,11 @@
         <div class="col-md-6">
             <h1>Hello, I'm Soung Oo Lwin</h1>
             <p class="mt-5">
-                Originally from Yangon, Burma. But, I live in Bangkok now. I've
-                been a tech enthusiast since I was a kid, always curious about
-                tech gadgets, computers, and hardware. When I started
-                university, I wasn't exactly sure what programming was, but my
-                passion for all things tech led me to choose a Computer Science
-                Major.
+                Originally from Yangon, Burma. But, now in Bangkok. I've been a
+                tech enthusiast since I was a kid, always curious about tech
+                gadgets, computers, and hardware. When I started university, I
+                wasn't exactly sure what programming was, but my passion for all
+                things tech led me to choose a Computer Science Major.
             </p>
             <br />
             <p>
@@ -73,11 +72,11 @@
             <div class="sep"></div>
             <p class="text-center">
                 <a
-                    href="mailto:soungoolwin275@gmail.com"
+                    href="mailto:contact@soungoolwin.me"
                     target="_blank"
                     class="link-dark"
                     ><i class="fa-solid fa-envelope mr-2"></i
-                    >soungoolwin275@gmail.com</a
+                    >contact@soungoolwin.me</a
                 >
             </p>
         </div>
