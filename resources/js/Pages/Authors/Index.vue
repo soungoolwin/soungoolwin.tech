@@ -80,11 +80,17 @@
                 >
             </p>
         </div>
+        <div class="mx-auto my-5">
+            <AuthorTimeline />
+        </div>
     </div>
 </template>
 
 <script>
-export default {};
+import AuthorTimeline from "../../components/AuthorTimeline.vue";
+export default {
+    components: { AuthorTimeline },
+};
 </script>
 
 <style>
