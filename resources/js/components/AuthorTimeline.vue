@@ -14,7 +14,7 @@
 
             <div class="tl-body">
                 <p>
-                    I am now currently working as intern laravel developer at
+                    I am currently working as intern laravel developer at
                     <em><b>Barlote</b></em
                     >.
                 </p>
@@ -33,10 +33,7 @@
             </div>
 
             <div class="tl-body">
-                <p>
-                    I also run <em><b>Technophilia Lab</b></em> as a freelance
-                    web developer(Side Job).
-                </p>
+                <p>I also run as a freelance web developer(Side Job).</p>
             </div>
         </div>
         <!-- <div class="tl-content">
