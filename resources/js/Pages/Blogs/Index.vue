@@ -178,4 +178,9 @@ export default {
 .wid {
     width: 50%;
 }
+@media screen and (max-width: 768px) {
+    .wid {
+        width: 100%;
+    }
+}
 </style>
