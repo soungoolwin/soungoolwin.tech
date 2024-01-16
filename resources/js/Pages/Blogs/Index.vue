@@ -1,7 +1,32 @@
 <script setup>
 import formatRelativeTime from "../../../js/composables/formatRelativeTime";
 import calculateReadingTime from "../../../js/composables/calculateReadingTime";
+import { onMounted, watch } from "vue";
+import { throttle } from "lodash";
+import { router } from "@inertiajs/vue3";
+
 const { blogs } = defineProps({ blogs: Object });
+
+// Data property for search input value
+let search = ref("");
+
+// Watch the 'form' with deep and throttle
+watch(
+    () => search.value,
+    throttle(() => {
+        const routePath = search.value ? `/?search=${search.value}` : "/";
+        router.get(
+            routePath,
+            {},
+            {
+                preserveState: true,
+            }
+        );
+    }, 150),
+    { deep: true }
+);
+
+// Method to handle form submission
 
 // Function to truncate content for preview
 const truncatedContent = (content) => {
@@ -9,6 +34,13 @@ const truncatedContent = (content) => {
     const truncatedWords = words.slice(0, 5);
     return truncatedWords.join(" ");
 };
+onMounted(() => {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const searchValue = urlParams.get("search");
+
+    search.value = searchValue;
+});
 </script>
 
 <template>
@@ -26,7 +58,24 @@ const truncatedContent = (content) => {
         <section class="featured-posts">
             <div class="section-title">
                 <h2><span>Blogs</span></h2>
+                <div
+                    class="d-flex align-items-center justify-content-center min-vh-100 bg-light"
+                >
+                    <div class="p-4 wid">
+                        <div class="mb-3">
+                            <input
+                                class="form-control"
+                                autocomplete="off"
+                                type="text"
+                                name="search"
+                                placeholder="Search…"
+                                v-model="search"
+                            />
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <div class="row listfeaturedtag">
                 <!-- begin post -->
                 <div
@@ -118,10 +167,15 @@ const truncatedContent = (content) => {
 
 <script>
 import Pagination from "../../components/Pagination.vue";
+import { ref, watch } from "vue";
 
 export default {
     components: { Pagination },
 };
 </script>
 
-<style></style>
+<style>
+.wid {
+    width: 50%;
+}
+</style>
